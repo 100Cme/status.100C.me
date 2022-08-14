@@ -1,0 +1,163 @@
+:root {
+  --cA: #000000;
+  --cB: #FFFFFF;
+  --cC: #282A2E;
+  --cD: #ff595e;
+  --cE: #e5e5e5;
+}
+* {
+  font-family: 'Fira Mono', monospace;
+  line-height: 1.6;
+  font-size: 1em;
+  font-weight: 400;
+}
+body {
+  display: block;
+  background-color: var(--cE);
+  color: var(--cC);
+  margin: 5%;
+  width: 90%;
+}
+header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--cD);
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+img {
+  display: block;
+  align-self: center;
+}
+h3, p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+h3{
+  display: block;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+  margin: 0;
+}
+mark {
+  line-height: 1.5em;
+  padding: 0.1rem 0.5rem;
+  background-color: var(--cC);
+  color: var(--cB);
+}
+li {
+  margin-bottom: 0.5rem;
+}
+hr {
+  border-top: solid 1px var(--cC);
+}
+strong {
+  font-weight: 600;
+}
+
+.nav, .btn {
+  text-align: center;
+  font-size: 1em;
+}
+.nav {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.btn, .dsb {
+  display: inline;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--cA);
+  color: var(--cE);
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+.btn {
+  display: inline;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--cA);
+  color: var(--cE);
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+.box {
+  display: block;
+  margin: 0.5rem auto 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
+  background-color: var(--cB);
+}
+.ilBox {
+  display: block;
+  width: 90%;
+  margin: 0;
+  border: solid 0.2rem var(--cC);
+  background-color: var(--cC);
+  color: var(--cB);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+footer {
+  margin: 2rem 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+a {
+  text-decoration: underline;
+  color: var(--cD);
+}
+a:hover{
+  color: var(--cB)
+}
+.rgt {
+  text-align: right;
+}
+.cnt {
+  text-align: center;
+}
+.w100 {
+  width: 100%;
+}
+table {
+  color: var(--cA);
+  width: fit-content;
+  text-align: center;
+}
+td, #burnStats th {
+  padding: 0.5rem;
+}
+tr{background-color: var(--cE);}
+tr:hover {background-color: var(--cD); color: var(--cB)}
+
+th {
+  background-color: var(--cH);
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}
