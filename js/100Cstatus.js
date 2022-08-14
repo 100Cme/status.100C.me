@@ -7,7 +7,7 @@ function getStatBurn(){
         if (json._embedded.records[i].to == "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA") {
           // get id :
           var txID0 = json._embedded.records[i].id;
-          var txID = txID0.slice(0,4) +".."+ txID0.slice(-4) ;
+          var txID = txID0.slice(0,3) +".."+ txID0.slice(-3) ;
           var burnAmt0 = parseFloat(json._embedded.records[i].amount);
           var burnAmt = burnAmt0.toFixed(2);
           // get time:
@@ -38,10 +38,10 @@ function getBuyStats(){
       var sAm0 = parseFloat(json._embedded.records[j].amount);
       var sAmt = sAm0.toFixed(2);
       var bAm0 = sAmt / bPrc;
-      var bAmt = bAm0.toFixed(2);
+      var bAmt = bAm0.toFixed(0);
       var bID0 = json._embedded.records[j].id;
-      var bID = bID0.slice(0,4) +".."+ bID0.slice(-4) ;
-      $("#buyStats").append("<tr><td>"+ bTm1 +" "+ bTm2 +"</td><td class='rgt'>"+ bAmt +"</td><td>" + bPrc +"</td><td class='rgt'>" + sAmt +"</td><td><a href='https://stellar.expert/explorer/public/offer/"+bID0+"' target='_blank' rel='noopener noreferrer'>"+bID+"&nearr;</a></td></tr>");
+      var bID = bID0.slice(0,3) +".."+ bID0.slice(-3);
+      $("#buyStats").append("<tr><td>"+ bTm1 +" "+ bTm2 +"</td><td class='rgt'>"+ bAmt +"</td><td>" + bPrc +"</td><td><a href='https://stellar.expert/explorer/public/offer/"+bID0+"' target='_blank' rel='noopener noreferrer'>"+bID+"&nearr;</a></td></tr>");
     }
         
   });
