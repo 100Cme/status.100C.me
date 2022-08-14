@@ -15,8 +15,8 @@ body {
   display: block;
   background-color: var(--cE);
   color: var(--cC);
-  margin: 5%;
-  width: 90%;
+  margin: 2%;
+  width: 96%;
 }
 header {
   width: 100%;
@@ -105,7 +105,7 @@ strong {
 .box {
   display: block;
   margin: 0.5rem auto 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
   max-width: 60rem;
   background-color: var(--cB);
 }
@@ -147,10 +147,12 @@ a:hover{
 table {
   color: var(--cA);
   width: fit-content;
+  font-size: 1em;
   text-align: center;
 }
-td, #burnStats th {
+td, th {
   padding: 0.5rem;
+  word-break: break-word;
 }
 tr{background-color: var(--cE);}
 tr:hover {background-color: var(--cD); color: var(--cB)}
@@ -160,4 +162,16 @@ th {
   padding: 0.5rem;
   text-align: center;
   font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  h3{
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  table {
+    font-size: 0.8em;
+  }
+  td, th {
+    padding: 0.1rem;
+  }
 }
