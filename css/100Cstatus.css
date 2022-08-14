@@ -130,7 +130,7 @@ footer {
 }
 a {
   text-decoration: underline;
-  color: var(--cD);
+  color: var(--cA);
 }
 a:hover{
   color: var(--cB)
